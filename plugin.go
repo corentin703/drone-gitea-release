@@ -52,9 +52,9 @@ func (p Plugin) Exec() error {
 		files []string
 	)
 
-	if p.Build.Event != "tag" {
-		return fmt.Errorf("The Gitea Release plugin is only available for tags")
-	}
+	// if p.Build.Event != "tag" {
+	// 	return fmt.Errorf("The Gitea Release plugin is only available for tags")
+	// }
 
 	if p.Config.APIKey == "" {
 		return fmt.Errorf("You must provide an API key")
